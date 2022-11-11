@@ -1,3 +1,4 @@
+import { When } from "@badeball/cypress-cucumber-preprocessor";
 import BaseWeb from "../BaseWeb.js";
 
 class Products extends BaseWeb{
@@ -19,6 +20,7 @@ class Products extends BaseWeb{
     }
 
     findProduct(searchText){
+      cy.log(`**find product ${searchText}**`);
         return this.listAllProducts().then(arr=>{
             return arr.indexOf(searchText)+1
         })

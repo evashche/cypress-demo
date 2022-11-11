@@ -9,8 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@types/mocha": "^10.0.0",
-    "cypress": "^10.9.0",
-    "cypress-xpath": "^2.0.1"
+    "cypress": "^10.11.0",
+    "cypress-xpath": "^2.0.1",
+    "esbuild": "^0.15.13"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0"
   }
 }
